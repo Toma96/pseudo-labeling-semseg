@@ -42,11 +42,11 @@ data/
         val_labels/
 ```
 
-In order to create masks with 11 semantic classes, you can run data/mask_maker.py (you'll need to do this for every subset), just be careful about the path where new images are stored. Those masks should be located in test_labels, train_labels and val_labels prior to training and evaluating the model.
+In order to create masks with 11 semantic classes, you can run `data/mask_maker.py` (you'll need to do this for every subset), just be careful about the path where new images are stored. Those masks should be located in `test_labels`, `train_labels` and `val_labels` prior to training and evaluating the model.
 
 ### Training and evaluation
 
-Before running semisup_cam.py or semisup_cif.py, you'll need to create the following folder structure, so that the model can save and load its best checkpoints while learning:
+Before running `semisup_cam.py` or `semisup_cif.py`, you'll need to create the following folder structure, so that the model can save and load its best checkpoints while learning:
 ```
 saved_models/
     pseudo_cam/
@@ -56,7 +56,7 @@ semisup_cam.py
 semisup_cif.py
 ```
 
-All the parameters and hyperparameters can be modified within semisup_cam.py and semisup_cif.py.
+All the parameters and hyperparameters can be modified within `semisup_cam.py` and `semisup_cif.py`.
 
 If you have any questions, feel free to contact me via mail: toma.petrac@gmail.com
 
